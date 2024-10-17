@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% block title %}
+  <title>Contact Us - Task Mate</title>
+{% endblock title %}
+
+{% block content %}
+<div class="container py-5">
+    <div class="card shadow-lg p-4">
+        <h1 class="text-center display-4 mb-4">{{contact_text}}</h1>
+        <p class="text-center lead">If you have any questions, feel free to reach out to us at:</p>
+        
+        <div class="contact-details text-center mt-4">
+            <h3 class="mb-3 text-primary">Email:</h3>
+            <p>
+                <a href="mailto:yatheeshpateelkgm@gmail.com" class="text-decoration-none fs-5 text-dark">
+                    yatheeshpateelkgm@gmail.com
+                </a>
+            </p>
+        </div>
+
+        <div class="text-center mt-5">
+            <a href="{% url 'index' %}" class="btn btn-outline-primary btn-lg">Back to Home</a>
+        </div>
+    </div>
+</div>
+
+<!-- Custom CSS -->
+<style>
+    body {
+        background-color: #f8f9fa;
+    }
+    .card {
+        background-color: #ffffff;
+        border-radius: 10px;
+        border: none;
+    }
+    .contact-details h3 {
+        font-weight: bold;
+    }
+</style>
+{% endblock content %}
